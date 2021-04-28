@@ -40,7 +40,7 @@ function draw() {
 function keyPressed() {
 	if (keyCode === UP_ARROW) {
 	   // Look at the hints in the document and understand how to make the package body fall only on press of the Down arrow key.
-   Matter.Body.applyForce(paper.body,paper.body.position,{x:300,y:-300})
+   Matter.Body.applyForce(paper.body,paper.body.position,{x:100,y:-80})
 	   
 	 }
    }
