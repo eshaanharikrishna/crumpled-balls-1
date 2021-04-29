@@ -7,11 +7,12 @@ class Paper {
       this.radius = radius;
      
       World.add(world, this.body);
+       this.image=loadImage("paper.png")
     }
     display(){
       var pos =this.body.position;
-      ellipseMode(CENTER);
+      imageMode(CENTER);
       fill("green");
-      ellipse(pos.x, pos.y, this.radius, this.radius);
+      image( this.image,pos.x, pos.y, this.radius, this.radius);
     }
   };
